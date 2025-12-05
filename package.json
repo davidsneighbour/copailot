@@ -1,0 +1,27 @@
+{
+  "name": "@davidsneighbour/copailot",
+  "description": "",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidsneighbour/copailot.git"
+  },
+  "author": "Patrick Kollitsch <davidsneighbourdev+gh@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/davidsneighbour/copailot/issues"
+  },
+  "homepage": "https://github.com/davidsneighbour/copailot#readme",
+  "keywords": [],
+  "dependencies": {
+    "@davidsneighbour/release-config": "2025.3.8",
+    "undici-types": "7.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1"
+  },
+  "type": "module",
+  "scripts": {
+    "release": "commit-and-tag-version --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" -- --no-verify && ./scripts/postrelease"
+  }
+}
