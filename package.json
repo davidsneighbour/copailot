@@ -1,7 +1,7 @@
 {
   "name": "@davidsneighbour/copailot",
   "description": "",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "type": "module",
   "scripts": {
-    "release": "commit-and-tag-version --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" -- --no-verify && ./scripts/postrelease"
+    "release": "commit-and-tag-version --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" -- --no-verify && ./scripts/postrelease",
+    "release:minor": "commit-and-tag-version --release-as minor --sign -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" -- --no-verify && ./scripts/postrelease"
   }
 }

@@ -8,6 +8,19 @@ const standardVersion = {
   scripts: {
     prerelease: "./scripts/prerelease",
   },
+  types: [
+    { type: "content", section: "Content" },
+    { type: "docs", section: "Documentation" },
+    { type: "feat", section: "Features" },
+    { type: "theme", section: "Theme" },
+    { type: "style", section: "Styling" },
+    { type: "refactor", section: "Refactors" },
+    { type: "test", section: "Tests" },
+    { type: "chore", section: "Chore" },
+    { type: "config", section: "Configuration" },
+    { type: "build", section: "Build System" },
+    { type: "ci", section: "CI" },
+  ]
 };
 
 module.exports = standardVersion;
